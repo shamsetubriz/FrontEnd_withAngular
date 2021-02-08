@@ -1,14 +1,78 @@
 .title{
-    border: 2px solid rgba(112, 0, 177, 0.658);
+    border: 5px solid rgba(112, 0, 177, 0.658);
     padding-top: 10 px;
     padding-left: 20 px;
+    justify-content: center;
+ //   justify-content: space-around;
+    display: flex;
+  //  align-items: center;
 
 }
 
 .sub-title{
-    border: 2px solid red;
+    border: 3px solid red;
+    justify-content: center;
+    display: flex;
+    
 }
 
-.intro > {
+.intro {
  background-color: green;
+}
+
+#user1{
+    font-size: 30px;
+}
+
+// ul li:first-child{
+//     background-color: blue;
+// } 
+
+ul{
+    height:  50px;
+    list-style-type: none;
+    justify-content: center;
+    justify-content: space-around;
+    //justify-content: space-between;
+    
+    border: 2px solid green;
+    margin: o;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    // flex-direction: row-reverse;
+    //flex-direction: column-reverse;
+   flex-direction: row;
+   //flex-direction: column;
+   flex-wrap: wrap;
+}
+
+li{
+    border: 1px red;
+}
+
+.One-container {
+    background-color: violet;
+}
+.Two-container {
+ //   flex-basis: 20%;
+    background-color: pink;
+}
+.Three-container {
+  //  flex-basis: 15%;
+    background-color: brown;
+}
+.Four-container {
+ //   flex-basis: 25%;
+    background-color: yellow;
+}
+.Five-container {
+ //   flex-basis: 10%;
+    background-color: lime;
+}
+
+@media (max-width: 600px){
+    p {
+        background-color: darkviolet;
+    }
 }

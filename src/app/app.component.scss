@@ -1,19 +1,17 @@
 .title{
-    border: 5px solid rgba(112, 0, 177, 0.658);
+    border: 10px solid rgba(112, 0, 177, 0.658);
     padding-top: 10 px;
     padding-left: 20 px;
     justify-content: center;
  //   justify-content: space-around;
     display: flex;
   //  align-items: center;
-
 }
 
 .sub-title{
     border: 3px solid red;
     justify-content: center;
-    display: flex;
-    
+    display: flex;   
 }
 
 .intro {
@@ -29,13 +27,13 @@
 // } 
 
 ul{
-    height:  50px;
+    height:  40px;
     list-style-type: none;
     justify-content: center;
     justify-content: space-around;
     //justify-content: space-between;
     
-    border: 2px solid green;
+    border: 3px solid green;
     margin: o;
     padding: 0;
     display: flex;
@@ -52,27 +50,45 @@ li{
 }
 
 .One-container {
+    flex-basis: 15%;
     background-color: violet;
 }
 .Two-container {
- //   flex-basis: 20%;
+    flex-basis: 10%;
     background-color: pink;
 }
 .Three-container {
-  //  flex-basis: 15%;
-    background-color: brown;
+    flex-basis: 15%;
+    background-color: lightblue;
 }
 .Four-container {
- //   flex-basis: 25%;
+    flex-basis: 15%;
     background-color: yellow;
 }
 .Five-container {
- //   flex-basis: 10%;
+    flex-basis: 10%;
     background-color: lime;
+}
+.Six-container {
+    flex-basis: 10%;
+    background-color: green;
+}
+.Seven-container {
+    flex-basis: 10%;
+    background-color: red;
+}
+
+.Eight-container {
+    flex-basis: 10%;
+    background-color: violet;
 }
 
 @media (max-width: 600px){
     p {
         background-color: darkviolet;
     }
+}
+
+.app-container{
+    background-color: red;
 }

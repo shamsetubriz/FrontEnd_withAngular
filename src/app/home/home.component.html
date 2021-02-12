@@ -1,0 +1,33 @@
+<div class="home-container">
+    <h1>Welcome, {{name}}.</h1>
+    <h3>Length of name is {{name.length}}</h3>
+    <h3> {{duration}} {{duration > 1 ? 'seconds' : 'second'}}</h3>
+    <h3>{{ "String Interpolation: " + title}} </h3>
+</div>
+
+<img [src]="imageUrl" />
+<br>
+<br>
+<input [disabled] = "isActive" />
+
+<button [disabled] = "!isAuthenticated">Enter</button>
+
+<button [attr.aria-label] = "actionName">{{actionName}} with Aria</button>
+<a [href] = "destinationnUrl" [attr.search-page] = "alternativeUrl">Search with Google</a>
+
+<input [(ngModel)] = "userName">
+<h3> Hello! welcome{{ userName }}.</h3>
+
+<button (click) = "onClick()">Click here</button>
+<h3>Youu have clicked {{clickCounter}} times</h3>
+
+<textarea (keydown) = "onKeyPressed($event)"></textarea>
+
+<h1 [class.special]="isSpecial">Example of class bindinng</h1>
+<h4 [ngClass]="isSpecial ? 'special' : 'regular_user'">Example of multiple class binding</h4>
+<div style="margin-bottom: 200px;"> </div>
+<div [style.color]="!applyStyle? 'blue' : 'orange'" >Example of Style Binding</div>
+<br>
+<br>
+
+

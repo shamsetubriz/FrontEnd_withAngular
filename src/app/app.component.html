@@ -1,9 +1,34 @@
-Hello {{title}}
+<app-topnav></app-topnav>
 
-<h1 class="title">Dumy Fine Dining web app</h1>
+<br>
+<br>
+<br>
+<router-outlet>  
+</router-outlet>
+<!-- <app-products-list></app-products-list>
+<app-signin></app-signin>
+<app-signup></app-signup>
+<app-members></app-members> -->
+
+<br>
+<br>
+<br>
+
+
+{{title}}
+
+<!-- <h1 class="title">Dumy web app for dummys</h1>
 <h2 class="sub-title">This is the title</h2>
-<h3 class="item1">This is another item</h3>
+<h3 class="item1">This is another item</h3> -->
 
+<div class="app-container">
+  <h1>{{title}}</h1>
+  <app-parent></app-parent>
+</div>
+
+<app-number-block></app-number-block>
+
+<app-login></app-login>
 
 <h6 class="subtitle">And this is a subtitle</h6>
 <p>McCarthy and Trump met on <b>Thursday</b> and <i>discussed</i> the latter's <sub>continued</sub> support for <sup>Republicans</sup> as they look to flip the Senate and House next year.
@@ -35,11 +60,11 @@ Hello {{title}}
 </section>
 
 <ul>
-  <li>Item5</li>
-  <li>Item2</li>
-  <li>Item4</li>
-  <li>Item3</li>
-  <li>Item1</li>
+  <li>Keep</li>
+  <li>On</li>
+  <li>Practicing</li>
+  <li>With</li>
+  <li>Consistency</li>
 </ul>
 
 <ol>
@@ -75,6 +100,6 @@ Hello {{title}}
 </div>
 
 
-<router-outlet>
-  
-</router-outlet>
+
+
+<div style="margin-bottom: 100px;"> </div>

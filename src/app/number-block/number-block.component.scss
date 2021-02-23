@@ -1,0 +1,39 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    width: 120px;
+    height: 40px;
+    border: 2px blue solid;
+    margin: 8px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}.active, li:hover{
+    background-color: #666666;
+    color: white;
+}
+
+.number-block-body{
+    margin: 24px;
+    display: flex;
+}
+
+.number-block-body ul{
+    flex-wrap: wrap;
+}
+.number-block-body li{
+    min-width: 120px;
+    min-height: 80px;
+    font-size: 65px;
+    margin: 8px;
+    background-color: cadetblue;
+}
+

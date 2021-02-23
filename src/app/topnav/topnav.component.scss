@@ -1,0 +1,47 @@
+.topnav-container {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+    cursor: pointer;
+    cursor: hand;
+  }
+  button {
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+  }
+  button:hover {
+    background-color: #566870;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+
+  /* Navigation link styles */
+  nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 16px;
+    display: inline-block;
+    background-color: rgb(178, 179, 153);
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #8b607e;
+  }
+  nav a:hover {
+    color: #6c63c2;
+    background-color: #c077e2;
+  }
+  nav a.active {
+    color:rgb(146, 89, 3);
+  }

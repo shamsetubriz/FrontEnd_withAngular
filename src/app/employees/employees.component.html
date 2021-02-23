@@ -1,0 +1,11 @@
+<div>
+    <div *ngFor="let employee of employeeList"> 
+        <a [routerLink]="['/employees', employee.id]">  
+            <div class="container">
+                <h3>{{employee.name}}</h3>
+            <p>{{employee.email}}</p>
+            </div>
+        </a>    
+    </div>
+</div>
+

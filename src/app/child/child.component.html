@@ -1,0 +1,9 @@
+<div class="child-component_container">
+    <h3>Child component: {{messageFromParent}}</h3>
+    <app-grang-child 
+    [messageFromGrandParent]="messageFromParent" 
+    (messageEvent)="recieveMessage($event)"   
+    ></app-grang-child>
+    <p>Message from child: {{messageFromChild}}</p>
+</div>
+

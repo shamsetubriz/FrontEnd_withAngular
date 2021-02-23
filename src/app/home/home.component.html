@@ -16,7 +16,7 @@
 <a [href] = "destinationnUrl" [attr.search-page] = "alternativeUrl">Search with Google</a>
 
 <input [(ngModel)] = "userName">
-<h3> Hello! welcome{{ userName }}.</h3>
+<h3> Hello! welcome{{ userName }}</h3>
 
 <button (click) = "onClick()">Click here</button>
 <h3>Youu have clicked {{clickCounter}} times</h3>
@@ -25,8 +25,10 @@
 
 <h1 [class.special]="isSpecial">Example of class bindinng</h1>
 <h4 [ngClass]="isSpecial ? 'special' : 'regular_user'">Example of multiple class binding</h4>
-<div style="margin-bottom: 200px;"> </div>
+
 <div [style.color]="!applyStyle? 'blue' : 'orange'" >Example of Style Binding</div>
+
+<div style="margin-bottom: 100px;"> </div>
 <br>
 <br>
 

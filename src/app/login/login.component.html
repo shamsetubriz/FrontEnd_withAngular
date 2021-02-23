@@ -1,0 +1,24 @@
+<div *ngIf="isAuthenticated"; else homeView>
+    User is Authenticated. You are allowed in Profile page
+</div>
+
+<ng-template #homeView>
+    <h3 This is the home page></h3>
+</ng-template>
+
+<!-- <ul *ngFor="let country of countries">
+    <li *ngIf="country === 'UK'" class="redzone" >{{ country}}</li>
+    <li *ngIf="country === 'USA'" class="redzone" >{{ country}}</li>
+    <li *ngIf="country === 'KSA'" class="redzone" >{{ country}}</li>
+    <li *ngIf="country === 'Bangladesh'" class="uk" >{{ country}}</li>
+    <li *ngIf="country !== 'UK' && country !== 'USA' && couuntry !=='KSA'" class="greenzone"></li>
+
+</ul> -->
+
+<div *ngFor="let country of countries" [ngSwitch]="country">
+    <li *ngSwitchCase="'UK'" class="redzone">{{country}}</li>
+    <li *ngSwitchCase="'USA'" class="redzone">{{country}}</li>
+    <li *ngSwitchCase="'KSA'" class="redzone">{{country}}</li>
+    <li *ngSwitchCase="'Bangladesh'" class="greenzone">{{country}}</li>
+    <li *ngSwitchDefault class="bluezone">{{country}}</li>
+</div>
